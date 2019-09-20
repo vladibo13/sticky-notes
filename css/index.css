@@ -1,0 +1,110 @@
+body {
+	font-family: 'Darker Grotesque', sans-serif;
+}
+
+h1 {
+	border-bottom: 1px solid black;
+	font-family: 'Fascinate', cursive;
+}
+
+form {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/note-background-3-min.jpg');
+	padding: 80px 0 70px 0;
+	background-position: center;
+	background-size: cover;
+}
+
+#notes-container {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('../images/notes-3-min.jpg');
+	height: 2000px;
+	background-position: center;
+	background-size: cover;
+}
+
+#form-wrapper {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.custom-card {
+	background: url('../images/notebg.png');
+	background-size: cover;
+	width: 100%;
+	border: none;
+}
+
+.close-btn {
+	color: red;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+.check-btn {
+	color: green;
+	cursor: pointer;
+	font-size: 24px;
+}
+
+option {
+	cursor: pointer;
+}
+
+.custom-select {
+	color: white;
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+/* fade in created elements */
+.fade-in {
+	animation: fadeIn ease 2s;
+	-webkit-animation: fadeIn ease 2s;
+	-moz-animation: fadeIn ease 2s;
+	-o-animation: fadeIn ease 2s;
+	-ms-animation: fadeIn ease 2s;
+}
+/* key frames */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

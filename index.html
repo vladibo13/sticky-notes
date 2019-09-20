@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fascinate&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- Icons -->
+    <link
+      href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Sticky Notes</title>
+  </head>
+  <body>
+    <div class="container-fluid w-100" id="form-wrapper">
+      <form id="note_form">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-2 ">
+              <h1 class="text-white">Sticky Notes</h1>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="form-group">
+                <!-- <label for="exampleInputEmail1">Email address</label> -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="note_mission"
+                  aria-describedby="missionHelp"
+                  placeholder="Note Mission"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-lg-2 mt-4">
+              <div class="form-group">
+                <!-- <label for="exampleInputPassword1">Password</label> -->
+                <input
+                  type="date"
+                  class="form-control"
+                  id="note_date"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-lg-2 mt-4">
+              <div class="form-group">
+                <!-- <label for="exampleInputPassword1">Password</label> -->
+                <input
+                  type="time"
+                  class="form-control"
+                  id="note_time"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-lg-3 mt-4">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button
+                  id="note_submit"
+                  type="button"
+                  class="btn btn-primary px-3 "
+                >
+                  Submit
+                </button>
+                <button
+                  id="note_clear"
+                  type="button"
+                  class="btn btn-danger px-3"
+                >
+                  Clear
+                </button>
+                <select id="note_filter" class="custom-select bg-secondary">
+                  <option value="all">All Notes</option>
+                  <option value="selected">Completed Notes</option>
+                  <option value="notselected">Not Completed Notes</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- <hr /> -->
+    <div class="container-fluid" id="notes-container">
+      <div id="note_error"></div>
+
+      <div id="notes" class="row pt-2">
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="card m-auto py-5 custom-card">
+            <div class="form-check-inline">
+              <i class="ion-md-close-circle-outline close-btn mx-2"></i>
+              <!-- <input class="form-check-input bg-primary" type="checkbox" value="" id="defaultCheck1"> -->
+              <i class="ion-md-checkmark-circle check-btn"></i>
+              <i class="ion-md-radio-button-off check-btn"></i>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="card-text lead">12/03/2019</p>
+              <p class="card-text lead">22:05PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="./js/model.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/events.js"></script>
+  </body>
+</html>
